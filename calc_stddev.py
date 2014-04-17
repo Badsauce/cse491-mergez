@@ -15,7 +15,7 @@ def sum_sq_diff(series):
 
 def stddev(series):
     "Calculate the standard deviation of the given series."
-    ssd = sum_sq_diff(series)
+    ssd = sum_sq_diff(series) / float(len(series))
     return math.sqrt(ssd)
 
 if __name__ == '__main__':
